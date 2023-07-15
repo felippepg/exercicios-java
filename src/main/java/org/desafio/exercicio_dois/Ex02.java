@@ -23,6 +23,11 @@ public class Ex02 {
         System.out.print("Digite o valor desejado: ");
         Double valor = scanner.nextDouble();
 
+        while(valor < 0 || valor > 100000) {
+            System.out.println("Digite um valor acima de 0 e menor que 100000");
+            valor = scanner.nextDouble();
+        }
+
         while ((valor / 100) >= 1) {
             valor = valor - 100;
             notasDeCem++;
