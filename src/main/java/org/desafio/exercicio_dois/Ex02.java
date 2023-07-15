@@ -23,8 +23,8 @@ public class Ex02 {
         System.out.print("Digite o valor desejado: ");
         Double valor = scanner.nextDouble();
 
-        while(valor < 0 || valor > 100000) {
-            System.out.println("Digite um valor acima de 0 e menor que 100000");
+        while(valor < 0 || valor > 1000000.00) {
+            System.out.println("Digite um valor entre de 0 e 1000000.00");
             valor = scanner.nextDouble();
         }
 
@@ -51,12 +51,10 @@ public class Ex02 {
             notasDeCinco++;
         }
 
-        System.out.println("VALOR " + valor);
         while ((valor / 2) >= 1) {
             valor = valor - 2;
             notasDeDois++;
         }
-        System.out.println("VALOR " + valor);
 
         while ((valor / 1) >= 1) {
             valor = valor - 1;

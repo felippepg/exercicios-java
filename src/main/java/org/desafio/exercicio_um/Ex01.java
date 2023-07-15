@@ -15,8 +15,8 @@ public class Ex01 {
         System.out.print("Digite o número de entradas ");
         Long entradas = scanner.nextLong();
 
-        while(entradas < 0 || entradas > 100000) {
-            System.out.println("Digite um valor acima de 0 e menor que 100000");
+        while(entradas <= 1 || entradas >= 100000) {
+            System.out.println("Digite um valor acima de 1 e menor que 100000");
             entradas = scanner.nextLong();
         }
 
